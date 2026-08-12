@@ -1,0 +1,39 @@
+<!-- 增加宽度突破限制，并增加滚动条适配手机端 -->
+<div class="catalog-container" style="margin-left: calc(-10vw); margin-right: calc(-10vw); width: auto; overflow-x: auto; margin-top: 20px;">
+  <table style="width: 100%; min-width: 700px; border-collapse: collapse; font-size: 0.95em;">
+    <thead>
+      <tr style="background-color: var(--theme); border-bottom: 2px solid var(--border); text-align: left;">
+        <th style="padding: 10px; width: 110px;">RJ号</th>
+        <th style="padding: 10px;">音声标题</th>
+        <th style="padding: 10px; width: 140px;">社团</th>
+        <th style="padding: 10px; width: 60px; text-align: center;">分级</th>
+        <th style="padding: 10px; width: 220px;">标签</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{ range ((where .Site.RegularPages "Section" "posts").ByParam "rj_id").Reverse }}
+      {{ if .Params.rj_id }}
+      <tr style="border-bottom: 1px solid var(--border);">
+        <td style="padding: 10px; font-family: monospace; font-weight: bold;">
+          <a href="{{ .RelPermalink }}" style="box-shadow: none;">{{ .Params.rj_id }}</a>
+        </td>
+        <td style="padding: 10px;">
+          <a href="{{ .RelPermalink }}" style="box-shadow: none; font-weight: 500;">{{ .Title }}</a>
+        </td>
+        <td style="padding: 10px; font-size: 0.9em;">
+          {{ default "-" .Params.circle }}
+        </td>
+        <td style="padding: 10px; text-align: center;">
+          {{ if eq .Params.rating "绿" }}🟢{{ else if eq .Params.rating "黄" }}🟡{{ else }}🔴{{ end }}
+        </td>
+        <td style="padding: 10px; font-size: 0.85em;">
+          {{ range .Params.tags }}
+            <span style="background: var(--code-bg); padding: 2px 6px; border-radius: 4px; margin-right: 4px; display: inline-block; margin-bottom: 2px;">#{{ . }}</span>
+          {{ end }}
+        </td>
+      </tr>
+      {{ end }}
+      {{ end }}
+    </tbody>
+  </table>
+</div>

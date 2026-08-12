@@ -1,11 +1,138 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Tags on My New Hugo Project</title>
+    <title>Tags on 百合音声分享站</title>
     <link>http://localhost:1313/tags/</link>
-    <description>Recent content in Tags on My New Hugo Project</description>
+    <description>Recent content in Tags on 百合音声分享站</description>
     <generator>Hugo</generator>
     <language>en-us</language>
+    <lastBuildDate>Thu, 13 Aug 2026 00:00:00 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ASMR</title>
+      <link>http://localhost:1313/tags/asmr/</link>
+      <pubDate>Thu, 13 Aug 2026 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tags/asmr/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>GID/认同障碍</title>
+      <link>http://localhost:1313/tags/gid/%E8%AE%A4%E5%90%8C%E9%9A%9C%E7%A2%8D/</link>
+      <pubDate>Thu, 13 Aug 2026 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tags/gid/%E8%AE%A4%E5%90%8C%E9%9A%9C%E7%A2%8D/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SF</title>
+      <link>http://localhost:1313/tags/sf/</link>
+      <pubDate>Thu, 13 Aug 2026 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tags/sf/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SM</title>
+      <link>http://localhost:1313/tags/sm/</link>
+      <pubDate>Thu, 13 Aug 2026 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tags/sm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>主仆</title>
+      <link>http://localhost:1313/tags/%E4%B8%BB%E4%BB%86/</link>
+      <pubDate>Thu, 13 Aug 2026 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tags/%E4%B8%BB%E4%BB%86/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>主视角受</title>
+      <link>http://localhost:1313/tags/%E4%B8%BB%E8%A7%86%E8%A7%92%E5%8F%97/</link>
+      <pubDate>Thu, 13 Aug 2026 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tags/%E4%B8%BB%E8%A7%86%E8%A7%92%E5%8F%97/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>互攻</title>
+      <link>http://localhost:1313/tags/%E4%BA%92%E6%94%BB/</link>
+      <pubDate>Thu, 13 Aug 2026 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tags/%E4%BA%92%E6%94%BB/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>催眠</title>
+      <link>http://localhost:1313/tags/%E5%82%AC%E7%9C%A0/</link>
+      <pubDate>Thu, 13 Aug 2026 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tags/%E5%82%AC%E7%9C%A0/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>同人</title>
+      <link>http://localhost:1313/tags/%E5%90%8C%E4%BA%BA/</link>
+      <pubDate>Thu, 13 Aug 2026 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tags/%E5%90%8C%E4%BA%BA/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>多人</title>
+      <link>http://localhost:1313/tags/%E5%A4%9A%E4%BA%BA/</link>
+      <pubDate>Thu, 13 Aug 2026 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tags/%E5%A4%9A%E4%BA%BA/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>尾巴</title>
+      <link>http://localhost:1313/tags/%E5%B0%BE%E5%B7%B4/</link>
+      <pubDate>Thu, 13 Aug 2026 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tags/%E5%B0%BE%E5%B7%B4/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>搞笑</title>
+      <link>http://localhost:1313/tags/%E6%90%9E%E7%AC%91/</link>
+      <pubDate>Thu, 13 Aug 2026 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tags/%E6%90%9E%E7%AC%91/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>母女</title>
+      <link>http://localhost:1313/tags/%E6%AF%8D%E5%A5%B3/</link>
+      <pubDate>Thu, 13 Aug 2026 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tags/%E6%AF%8D%E5%A5%B3/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>汉化</title>
+      <link>http://localhost:1313/tags/%E6%B1%89%E5%8C%96/</link>
+      <pubDate>Thu, 13 Aug 2026 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tags/%E6%B1%89%E5%8C%96/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>纯爱</title>
+      <link>http://localhost:1313/tags/%E7%BA%AF%E7%88%B1/</link>
+      <pubDate>Thu, 13 Aug 2026 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tags/%E7%BA%AF%E7%88%B1/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>背德</title>
+      <link>http://localhost:1313/tags/%E8%83%8C%E5%BE%B7/</link>
+      <pubDate>Thu, 13 Aug 2026 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tags/%E8%83%8C%E5%BE%B7/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>触手</title>
+      <link>http://localhost:1313/tags/%E8%A7%A6%E6%89%8B/</link>
+      <pubDate>Thu, 13 Aug 2026 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tags/%E8%A7%A6%E6%89%8B/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>魔物娘</title>
+      <link>http://localhost:1313/tags/%E9%AD%94%E7%89%A9%E5%A8%98/</link>
+      <pubDate>Thu, 13 Aug 2026 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tags/%E9%AD%94%E7%89%A9%E5%A8%98/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

@@ -1,4 +1,47 @@
 baseURL = 'https://example.org/'
 locale = 'en-us'
-title = 'My New Hugo Project'
+title = '百合音声分享站'
 theme = "PaperMod"
+[outputs]
+  home = ["HTML", "RSS", "JSON"] # 增加 JSON 输出以供 Fuse.js 搜索使用
+
+[params.homeInfoParams]
+  Title = "欢迎来到百合音声分享站 🎧"
+  Content = """
+
+本处音声均由本人自购汉化分享，仅供学习交流。使用 LLM 翻译，个人润色＆时轴，请多见谅。
+
+若发现**链接失效**或**解压码错误**，请在确认后于 B 站私信本人，感谢！
+"""
+
+[params.fuseOpts]
+  isCaseSensitive = false
+  shouldSort = true
+  location = 0
+  distance = 1000
+  threshold = 0.4
+  minMatchCharLength = 1
+  keys = ["rj_id","title",]
+  
+[[menu.main]]
+  identifier = "catalog"
+  name = "总目录"
+  url = "/catalog/"
+  weight = 10
+
+[[menu.main]]
+  identifier = "search"
+  name = "搜索"
+  url = "/search/"
+  weight = 20
+
+[[menu.main]]
+  identifier = "tags"
+  name = "标签/筛选"
+  url = "/tags/"
+  weight = 30
+
+[taxonomies]
+  tag = "tags"
+  circle = "circles"
+  rating = "ratings"

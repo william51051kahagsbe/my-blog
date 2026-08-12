@@ -1,0 +1,67 @@
+/* ========================================================
+   仅对【首页（含 page/2/ 等所有翻页）】生效的双列网格布局
+   ======================================================== */
+
+/* 1. 扩充首页内容容器宽度 */
+body.is-home-page .main {
+    max-width: 1000px !important;
+}
+
+/* 2. 首页启用 CSS Grid 双列网格 */
+body.is-home-page main.main {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important; /* 双列等宽 */
+    gap: 20px !important;                             /* 卡片间距 */
+    align-items: stretch;
+}
+
+/* 3. 免责声明卡片独占一整行 */
+body.is-home-page .first-entry,
+body.is-home-page .home-info {
+    grid-column: 1 / -1 !important;
+    margin-bottom: 10px !important;
+}
+
+/* 4. 作品卡片基础样式 */
+body.is-home-page .post-entry {
+    width: 100% !important;
+    margin: 0 !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+/* 5. 统一封面图片高度（防止竖图错位） */
+body.is-home-page .post-entry img,
+body.is-home-page .entry-cover img {
+    width: 100% !important;
+    height: 280px !important;
+    object-fit: cover !important;
+    object-position: center top !important;
+    border-radius: 6px;
+}
+
+/* 6. 分页导航条（上一页/下一页）跨越整行 */
+body.is-home-page .pagination,
+body.is-home-page footer.page-footer {
+    grid-column: 1 / -1 !important;
+    width: 100% !important;
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px !important;
+    margin-bottom: 20px !important;
+    z-index: 10;
+}
+
+/* 7. 移动端 (手机/窄屏) 响应式切回单列展示 */
+@media (max-width: 768px) {
+    body.is-home-page main.main {
+        grid-template-columns: 1fr !important;
+        gap: 16px !important;
+    }
+    body.is-home-page .post-entry img {
+        height: 180px !important;
+    }
+}

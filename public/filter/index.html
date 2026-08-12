@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>资源分类与筛选 | 百合音声分享站</title>
+<meta name="keywords" content="">
+<meta name="description" content="按标签、社团、年龄向多维度查找音声">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/filter/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.b99e7ca37ce900824b30b89b14ebcbd72c1173d964e5721919e66cffa73d05d9.css" integrity="sha256-uZ58o3zpAIJLMLibFOvL1ywRc9lk5XIZGeZs/6c9Bdk=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/filter/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="百合音声分享站 (Alt + H)">百合音声分享站</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="http://localhost:1313/catalog/" title="总目录">
+                    <span>总目录</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search/" title="搜索 (Alt &#43; /)" accesskey=/>
+                    <span>搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/" title="标签/筛选">
+                    <span>标签/筛选</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      资源分类与筛选
+    </h1>
+    <div class="post-meta">
+
+
+
+</div>
+  </header> 
+  <div class="post-content md-content"><p>你可以点击下方对应的类别，快速筛选相关音声资源：</p>
+<div class="filter-hub" style="margin-top: 20px;">
+  
+  
+  <section style="margin-bottom: 30px; background: var(--entry); padding: 16px; border-radius: 8px; border: 1px solid var(--border);">
+    <h3 style="margin-top: 0; margin-bottom: 12px; border-bottom: 1px solid var(--border); padding-bottom: 8px;">🎨 按年龄向筛选</h3>
+    <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+      
+        
+        
+        
+        
+        
+          
+          
+        
+
+        <a href="/ratings/%E7%BA%A2/" style="padding: 6px 16px; background: #dc3545; color: #fff; border-radius: 20px; font-weight: bold; text-decoration: none; box-shadow: none;">
+          🔴 R-18 (红) <span style="font-size: 0.85em; opacity: 0.8;">(13)</span>
+        </a>
+      
+        
+        
+        
+        
+        
+          
+          
+        
+
+        <a href="/ratings/%E7%BB%BF/" style="padding: 6px 16px; background: #28a745; color: #fff; border-radius: 20px; font-weight: bold; text-decoration: none; box-shadow: none;">
+          🟢 全年龄 (绿) <span style="font-size: 0.85em; opacity: 0.8;">(2)</span>
+        </a>
+      
+        
+        
+        
+        
+        
+          
+          
+          
+        
+
+        <a href="/ratings/%E9%BB%84/" style="padding: 6px 16px; background: #ffc107; color: #333; border-radius: 20px; font-weight: bold; text-decoration: none; box-shadow: none;">
+          🟡 R-15 (黄) <span style="font-size: 0.85em; opacity: 0.8;">(2)</span>
+        </a>
+      
+    </div>
+  </section>
+
+  
+  <section style="margin-bottom: 30px; background: var(--entry); padding: 16px; border-radius: 8px; border: 1px solid var(--border);">
+    <h3 style="margin-top: 0; margin-bottom: 12px; border-bottom: 1px solid var(--border); padding-bottom: 8px;">🏛️ 按社团筛选</h3>
+    <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+      
+        <a href="/circles/kdm/" style="padding: 6px 12px; background: var(--code-bg); border-radius: 6px; font-size: 0.9em; text-decoration: none; border: 1px solid var(--border); box-shadow: none;">
+          🏛️ kdm <span style="opacity: 0.6; font-size: 0.85em;">(1)</span>
+        </a>
+      
+        <a href="/circles/wfs/" style="padding: 6px 12px; background: var(--code-bg); border-radius: 6px; font-size: 0.9em; text-decoration: none; border: 1px solid var(--border); box-shadow: none;">
+          🏛️ wfs <span style="opacity: 0.6; font-size: 0.85em;">(1)</span>
+        </a>
+      
+        <a href="/circles/%E3%81%88%E3%81%9F%E3%83%BC%E3%81%AA%E3%82%8B%E3%82%8F%E3%83%BC%E3%81%8F%E3%81%99/" style="padding: 6px 12px; background: var(--code-bg); border-radius: 6px; font-size: 0.9em; text-decoration: none; border: 1px solid var(--border); box-shadow: none;">
+          🏛️ えたーなるわーくす <span style="opacity: 0.6; font-size: 0.85em;">(1)</span>
+        </a>
+      
+        <a href="/circles/%E3%81%AA%E3%81%A4%E3%81%93%E3%82%93/" style="padding: 6px 12px; background: var(--code-bg); border-radius: 6px; font-size: 0.9em; text-decoration: none; border: 1px solid var(--border); box-shadow: none;">
+          🏛️ なつこん <span style="opacity: 0.6; font-size: 0.85em;">(3)</span>
+        </a>
+      
+        <a href="/circles/%E3%81%BE%E3%81%AA%E3%81%A5%E3%82%8B%E5%B1%8B-use/" style="padding: 6px 12px; background: var(--code-bg); border-radius: 6px; font-size: 0.9em; text-decoration: none; border: 1px solid var(--border); box-shadow: none;">
+          🏛️ まなづる屋℃-use <span style="opacity: 0.6; font-size: 0.85em;">(2)</span>
+        </a>
+      
+        <a href="/circles/%E3%83%A6%E3%83%93%E3%83%8E%E3%82%BF%E3%82%AF%E3%83%88/" style="padding: 6px 12px; background: var(--code-bg); border-radius: 6px; font-size: 0.9em; text-decoration: none; border: 1px solid var(--border); box-shadow: none;">
+          🏛️ ユビノタクト <span style="opacity: 0.6; font-size: 0.85em;">(2)</span>
+        </a>
+      
+        <a href="/circles/%E5%AE%89%E7%A8%B3%E5%89%91%E5%90%9E/" style="padding: 6px 12px; background: var(--code-bg); border-radius: 6px; font-size: 0.9em; text-decoration: none; border: 1px solid var(--border); box-shadow: none;">
+          🏛️ 安稳剑吞 <span style="opacity: 0.6; font-size: 0.85em;">(2)</span>
+        </a>
+      
+        <a href="/circles/%E5%BD%A9%E5%B1%8B/" style="padding: 6px 12px; background: var(--code-bg); border-radius: 6px; font-size: 0.9em; text-decoration: none; border: 1px solid var(--border); box-shadow: none;">
+          🏛️ 彩屋 <span style="opacity: 0.6; font-size: 0.85em;">(1)</span>
+        </a>
+      
+        <a href="/circles/%E6%99%AE%E9%B2%81%E5%A3%AB%E8%93%9D/" style="padding: 6px 12px; background: var(--code-bg); border-radius: 6px; font-size: 0.9em; text-decoration: none; border: 1px solid var(--border); box-shadow: none;">
+          🏛️ 普鲁士蓝 <span style="opacity: 0.6; font-size: 0.85em;">(3)</span>
+        </a>
+      
+        <a href="/circles/%E8%83%8C%E5%8C%85%E7%A4%BE/" style="padding: 6px 12px; background: var(--code-bg); border-radius: 6px; font-size: 0.9em; text-decoration: none; border: 1px solid var(--border); box-shadow: none;">
+          🏛️ 背包社 <span style="opacity: 0.6; font-size: 0.85em;">(1)</span>
+        </a>
+      
+    </div>
+  </section>
+
+  
+  <section style="margin-bottom: 30px; background: var(--entry); padding: 16px; border-radius: 8px; border: 1px solid var(--border);">
+    <h3 style="margin-top: 0; margin-bottom: 12px; border-bottom: 1px solid var(--border); padding-bottom: 8px;">🏷️ 按标签 (Tag) 筛选</h3>
+    <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+      
+        <a href="/tags/asmr/" style="padding: 4px 10px; background: var(--tertiary); border-radius: 6px; font-size: 0.88em; text-decoration: none; box-shadow: none;">
+          #asmr <span style="opacity: 0.6; font-size: 0.85em;">(3)</span>
+        </a>
+      
+        <a href="/tags/gid/%E8%AE%A4%E5%90%8C%E9%9A%9C%E7%A2%8D/" style="padding: 4px 10px; background: var(--tertiary); border-radius: 6px; font-size: 0.88em; text-decoration: none; box-shadow: none;">
+          #gid/认同障碍 <span style="opacity: 0.6; font-size: 0.85em;">(1)</span>
+        </a>
+      
+        <a href="/tags/sf/" style="padding: 4px 10px; background: var(--tertiary); border-radius: 6px; font-size: 0.88em; text-decoration: none; box-shadow: none;">
+          #sf <span style="opacity: 0.6; font-size: 0.85em;">(1)</span>
+        </a>
+      
+        <a href="/tags/sm/" style="padding: 4px 10px; background: var(--tertiary); border-radius: 6px; font-size: 0.88em; text-decoration: none; box-shadow: none;">
+          #sm <span style="opacity: 0.6; font-size: 0.85em;">(1)</span>
+        </a>
+      
+        <a href="/tags/%E4%B8%BB%E4%BB%86/" style="padding: 4px 10px; background: var(--tertiary); border-radius: 6px; font-size: 0.88em; text-decoration: none; box-shadow: none;">
+          #主仆 <span style="opacity: 0.6; font-size: 0.85em;">(2)</span>
+        </a>
+      
+        <a href="/tags/%E4%B8%BB%E8%A7%86%E8%A7%92%E5%8F%97/" style="padding: 4px 10px; background: var(--tertiary); border-radius: 6px; font-size: 0.88em; text-decoration: none; box-shadow: none;">
+          #主视角受 <span style="opacity: 0.6; font-size: 0.85em;">(7)</span>
+        </a>
+      
+        <a href="/tags/%E4%BA%92%E6%94%BB/" style="padding: 4px 10px; background: var(--tertiary); border-radius: 6px; font-size: 0.88em; text-decoration: none; box-shadow: none;">
+          #互攻 <span style="opacity: 0.6; font-size: 0.85em;">(3)</span>
+        </a>
+      
+        <a href="/tags/%E5%82%AC%E7%9C%A0/" style="padding: 4px 10px; background: var(--tertiary); border-radius: 6px; font-size: 0.88em; text-decoration: none; box-shadow: none;">
+          #催眠 <span style="opacity: 0.6; font-size: 0.85em;">(1)</span>
+        </a>
+      
+        <a href="/tags/%E5%90%8C%E4%BA%BA/" style="padding: 4px 10px; background: var(--tertiary); border-radius: 6px; font-size: 0.88em; text-decoration: none; box-shadow: none;">
+          #同人 <span style="opacity: 0.6; font-size: 0.85em;">(3)</span>
+        </a>
+      
+        <a href="/tags/%E5%A4%9A%E4%BA%BA/" style="padding: 4px 10px; background: var(--tertiary); border-radius: 6px; font-size: 0.88em; text-decoration: none; box-shadow: none;">
+          #多人 <span style="opacity: 0.6; font-size: 0.85em;">(1)</span>
+        </a>
+      
+        <a href="/tags/%E5%B0%BE%E5%B7%B4/" style="padding: 4px 10px; background: var(--tertiary); border-radius: 6px; font-size: 0.88em; text-decoration: none; box-shadow: none;">
+          #尾巴 <span style="opacity: 0.6; font-size: 0.85em;">(1)</span>
+        </a>
+      
+        <a href="/tags/%E6%90%9E%E7%AC%91/" style="padding: 4px 10px; background: var(--tertiary); border-radius: 6px; font-size: 0.88em; text-decoration: none; box-shadow: none;">
+          #搞笑 <span style="opacity: 0.6; font-size: 0.85em;">(1)</span>
+        </a>
+      
+        <a href="/tags/%E6%AF%8D%E5%A5%B3/" style="padding: 4px 10px; background: var(--tertiary); border-radius: 6px; font-size: 0.88em; text-decoration: none; box-shadow: none;">
+          #母女 <span style="opacity: 0.6; font-size: 0.85em;">(1)</span>
+        </a>
+      
+        <a href="/tags/%E6%B1%89%E5%8C%96/" style="padding: 4px 10px; background: var(--tertiary); border-radius: 6px; font-size: 0.88em; text-decoration: none; box-shadow: none;">
+          #汉化 <span style="opacity: 0.6; font-size: 0.85em;">(17)</span>
+        </a>
+      
+        <a href="/tags/%E7%BA%AF%E7%88%B1/" style="padding: 4px 10px; background: var(--tertiary); border-radius: 6px; font-size: 0.88em; text-decoration: none; box-shadow: none;">
+          #纯爱 <span style="opacity: 0.6; font-size: 0.85em;">(6)</span>
+        </a>
+      
+        <a href="/tags/%E8%83%8C%E5%BE%B7/" style="padding: 4px 10px; background: var(--tertiary); border-radius: 6px; font-size: 0.88em; text-decoration: none; box-shadow: none;">
+          #背德 <span style="opacity: 0.6; font-size: 0.85em;">(1)</span>
+        </a>
+      
+        <a href="/tags/%E8%A7%A6%E6%89%8B/" style="padding: 4px 10px; background: var(--tertiary); border-radius: 6px; font-size: 0.88em; text-decoration: none; box-shadow: none;">
+          #触手 <span style="opacity: 0.6; font-size: 0.85em;">(2)</span>
+        </a>
+      
+        <a href="/tags/%E9%AD%94%E7%89%A9%E5%A8%98/" style="padding: 4px 10px; background: var(--tertiary); border-radius: 6px; font-size: 0.88em; text-decoration: none; box-shadow: none;">
+          #魔物娘 <span style="opacity: 0.6; font-size: 0.85em;">(2)</span>
+        </a>
+      
+    </div>
+  </section>
+
+</div>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">百合音声分享站</a></span> · 
+
+    
+    
+    <span>
+        Powered by
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    window.onscroll = function () {
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
+        } else {
+            toplink.classList.add("hidden");
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

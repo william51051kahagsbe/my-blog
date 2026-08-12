@@ -1,0 +1,15 @@
+[{{- $pages := where .Site.RegularPages "Section" "posts" -}}
+{{- $first := true -}}
+{{- range $pages -}}
+{{- if .Params.rj_id -}}
+{{- if not $first -}},{{- else -}}{{- $first = false -}}{{- end -}}
+{
+  "title": {{ .Title | jsonify }},
+  "permalink": {{ .RelPermalink | jsonify }},
+  "content": {{ .Plain | jsonify }},
+  "rj_id": {{ default "" .Params.rj_id | jsonify }},
+  "circle": {{ default "" .Params.circle | jsonify }},
+  "tags": {{ default (slice) .Params.tags | jsonify }}
+}
+{{- end -}}
+{{- end -}}]

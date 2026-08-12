@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Ratings on 百合音声分享站</title>
+    <link>http://localhost:1313/ratings/</link>
+    <description>Recent content in Ratings on 百合音声分享站</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 13 Aug 2026 00:00:00 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/ratings/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>红</title>
+      <link>http://localhost:1313/ratings/%E7%BA%A2/</link>
+      <pubDate>Thu, 13 Aug 2026 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/ratings/%E7%BA%A2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>绿</title>
+      <link>http://localhost:1313/ratings/%E7%BB%BF/</link>
+      <pubDate>Thu, 13 Aug 2026 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/ratings/%E7%BB%BF/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>黄</title>
+      <link>http://localhost:1313/ratings/%E9%BB%84/</link>
+      <pubDate>Thu, 13 Aug 2026 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/ratings/%E9%BB%84/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

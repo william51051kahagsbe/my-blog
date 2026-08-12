@@ -1,0 +1,134 @@
+{{- /* ============================================================
+     voice_card 短代码 - 用于单页文章显示作品详细信息
+     调用方式：{{< voice_card >}} （无需参数，自动读取当前页面的 Front Matter）
+     ============================================================ */ -}}
+
+{{- $page := .Page -}}  {{/* 当前页面上下文 */}}
+
+<div class="voice-card" style="
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 24px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  background: var(--entry);
+  transition: box-shadow 0.2s;
+">
+  {{/* ---------- 封面 ---------- */}}
+  <div class="voice-cover" style="flex: 0 0 200px;">
+    {{- if $page.Params.cover.image }}
+      <img
+        src="{{ $page.Params.cover.image | relURL }}"
+        alt="{{ $page.Params.rj_id }}"
+        style="
+          width: 100%;
+          height: 280px;
+          object-fit: cover;
+          border-radius: 6px;
+          background: var(--code-bg);
+        "
+        loading="lazy"
+      />
+    {{- else }}
+      <div style="
+        width: 100%;
+        height: 280px;
+        border-radius: 6px;
+        background: var(--code-bg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--secondary);
+        font-size: 0.9em;
+      ">
+        暂无封面
+      </div>
+    {{- end }}
+  </div>
+
+  {{/* ---------- 信息区 ---------- */}}
+  <div class="voice-info" style="flex: 1; min-width: 250px;">
+
+    {{/* 标题 + RJ号 */}}
+    <h2 style="margin-top: 0; margin-bottom: 12px; font-size: 1.4em; line-height: 1.3;">
+      [{{ $page.Params.rj_id }}] {{ $page.Title }}
+    </h2>
+
+    {{/* 社团 */}}
+    {{- if $page.Params.circle }}
+      <p style="margin: 6px 0;">
+        <strong>社团：</strong>
+        <span style="
+          background: var(--tertiary);
+          padding: 2px 8px;
+          border-radius: 4px;
+          font-size: 0.9em;
+          display: inline-block;
+        ">
+          🏛️ {{ $page.Params.circle }}
+        </span>
+      </p>
+    {{- end }}
+
+    {{/* 年龄向（评级） */}}
+    <p style="margin: 6px 0;">
+      <strong>年龄向：</strong>
+      {{- $rating := $page.Params.rating | default "红" -}}
+      {{- if eq $rating "绿" -}}
+        <span style="background: #28a745; color: #fff; padding: 2px 10px; border-radius: 4px; font-size: 0.85em;">全年龄 (绿)</span>
+      {{- else if eq $rating "黄" -}}
+        <span style="background: #ffc107; color: #333; padding: 2px 10px; border-radius: 4px; font-size: 0.85em;">R-15 (黄)</span>
+      {{- else -}}
+        <span style="background: #dc3545; color: #fff; padding: 2px 10px; border-radius: 4px; font-size: 0.85em;">R-18 (红)</span>
+      {{- end -}}
+    </p>
+
+    {{/* 标签 */}}
+    {{- if $page.Params.tags }}
+      <p style="margin: 6px 0;">
+        <strong>标签：</strong>
+        {{- range $page.Params.tags }}
+          <span style="
+            background: var(--code-bg);
+            padding: 2px 6px;
+            margin-right: 4px;
+            border-radius: 4px;
+            font-size: 0.85em;
+            display: inline-block;
+            margin-bottom: 2px;
+          ">
+            #{{ . }}
+          </span>
+        {{- end }}
+      </p>
+    {{- end }}
+
+    {{/* 下载链接 */}}
+    {{- if $page.Params.download_link }}
+      <p style="margin: 6px 0;">
+        <strong>下载链接：</strong>
+        <a href="{{ $page.Params.download_link }}" target="_blank" rel="noopener">点击跳转网盘</a>
+      </p>
+    {{- end }}
+
+    {{/* 解压码 */}}
+    {{- if $page.Params.extract_code }}
+      <p style="margin: 6px 0;">
+        <strong>解压码：</strong>
+        <code style="
+          background: var(--code-bg);
+          padding: 2px 6px;
+          border-radius: 4px;
+          font-size: 0.9em;
+        ">
+          {{ $page.Params.extract_code }}
+        </code>
+      </p>
+    {{- end }}
+
+    {{/* （可选）显示 RJ 纯数字编号（仅供调试，可注释掉） */}}
+    {{- /* <p style="margin: 4px 0; font-size: 0.8em; color: var(--secondary);">排序编号：{{ $page.Params.rj_num }}</p> */ -}}
+  </div>
+</div>

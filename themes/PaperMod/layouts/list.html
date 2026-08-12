@@ -45,6 +45,9 @@
 {{- $pages = where $pages "Params.hiddenInHomeList" "!=" "true"  }}
 {{- end }}
 
+{{- /* ======================= 按 RJ 号排序（降序，新作在前） ======================= */}}
+{{- $pages = sort $pages "Params.rj_id" "desc" }}
+
 {{- $paginator := .Paginate $pages }}
 
 {{- if and .IsHome site.Params.homeInfoParams (eq $paginator.PageNumber 1) }}
