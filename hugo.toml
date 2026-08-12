@@ -1,4 +1,4 @@
-baseURL = 'my-blog-535.pages.dev'
+baseURL = 'https://my-blog-535.pages.dev'
 locale = 'en-us'
 title = '百合音声分享站'
 theme = "PaperMod"
