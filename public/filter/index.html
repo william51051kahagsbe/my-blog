@@ -106,8 +106,8 @@
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/tags/" title="标签/筛选">
-                    <span>标签/筛选</span>
+                <a href="http://localhost:1313/filter/" title="标签/筛选">
+                    <span class="active">标签/筛选</span>
                 </a>
             </li>
         </ul>
@@ -128,180 +128,260 @@
 </div>
   </header> 
   <div class="post-content md-content"><p>你可以点击下方对应的类别，快速筛选相关音声资源：</p>
-<div class="filter-hub" style="margin-top: 20px;">
+<div class="filter-hub-container" style="display: flex; flex-direction: column; gap: 30px; margin-top: 20px;">
+
   
-  
-  <section style="margin-bottom: 30px; background: var(--entry); padding: 16px; border-radius: 8px; border: 1px solid var(--border);">
-    <h3 style="margin-top: 0; margin-bottom: 12px; border-bottom: 1px solid var(--border); padding-bottom: 8px;">🎨 按年龄向筛选</h3>
-    <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+  <section class="filter-section" style="background: var(--entry); border: 1px solid var(--border); border-radius: 8px; padding: 20px;">
+    <h3 style="margin-top: 0; margin-bottom: 12px; border-bottom: 2px solid var(--border); padding-bottom: 8px; font-size: 1.15em; display: flex; align-items: center; gap: 8px;">
+      🔞 <span>年龄向</span>
+    </h3>
+    <div class="filter-tags" style="display: flex; flex-wrap: wrap; gap: 10px;">
       
-        
-        
-        
-        
-        
-          
-          
-        
-
-        <a href="/ratings/%E7%BA%A2/" style="padding: 6px 16px; background: #dc3545; color: #fff; border-radius: 20px; font-weight: bold; text-decoration: none; box-shadow: none;">
-          🔴 R-18 (红) <span style="font-size: 0.85em; opacity: 0.8;">(13)</span>
-        </a>
+      <a href="/ratings/%E7%BA%A2/" style="text-decoration: none; box-shadow: none;">
+        <span style="background: var(--theme); border: 1px solid var(--border); padding: 6px 14px; border-radius: 20px; font-size: 0.9em; color: var(--primary); display: inline-flex; align-items: center; gap: 6px; transition: all 0.2s ease;">
+          <strong>
+            🔴 R-18
+            
+          </strong>
+          <span style="opacity: 0.6; font-size: 0.85em;">(14)</span>
+        </span>
+      </a>
       
-        
-        
-        
-        
-        
-          
-          
-        
-
-        <a href="/ratings/%E7%BB%BF/" style="padding: 6px 16px; background: #28a745; color: #fff; border-radius: 20px; font-weight: bold; text-decoration: none; box-shadow: none;">
-          🟢 全年龄 (绿) <span style="font-size: 0.85em; opacity: 0.8;">(2)</span>
-        </a>
+      <a href="/ratings/%E7%BB%BF/" style="text-decoration: none; box-shadow: none;">
+        <span style="background: var(--theme); border: 1px solid var(--border); padding: 6px 14px; border-radius: 20px; font-size: 0.9em; color: var(--primary); display: inline-flex; align-items: center; gap: 6px; transition: all 0.2s ease;">
+          <strong>
+            🟢 全年龄
+            
+          </strong>
+          <span style="opacity: 0.6; font-size: 0.85em;">(2)</span>
+        </span>
+      </a>
       
-        
-        
-        
-        
-        
-          
-          
-          
-        
-
-        <a href="/ratings/%E9%BB%84/" style="padding: 6px 16px; background: #ffc107; color: #333; border-radius: 20px; font-weight: bold; text-decoration: none; box-shadow: none;">
-          🟡 R-15 (黄) <span style="font-size: 0.85em; opacity: 0.8;">(2)</span>
-        </a>
+      <a href="/ratings/%E9%BB%84/" style="text-decoration: none; box-shadow: none;">
+        <span style="background: var(--theme); border: 1px solid var(--border); padding: 6px 14px; border-radius: 20px; font-size: 0.9em; color: var(--primary); display: inline-flex; align-items: center; gap: 6px; transition: all 0.2s ease;">
+          <strong>
+            🟡 R-15
+            
+          </strong>
+          <span style="opacity: 0.6; font-size: 0.85em;">(2)</span>
+        </span>
+      </a>
       
     </div>
   </section>
 
   
-  <section style="margin-bottom: 30px; background: var(--entry); padding: 16px; border-radius: 8px; border: 1px solid var(--border);">
-    <h3 style="margin-top: 0; margin-bottom: 12px; border-bottom: 1px solid var(--border); padding-bottom: 8px;">🏛️ 按社团筛选</h3>
-    <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+  <section class="filter-section" style="background: var(--entry); border: 1px solid var(--border); border-radius: 8px; padding: 20px;">
+    <h3 style="margin-top: 0; margin-bottom: 12px; border-bottom: 2px solid var(--border); padding-bottom: 8px; font-size: 1.15em; display: flex; align-items: center; gap: 8px;">
+      🏠 <span>社团</span>
+    </h3>
+    <div class="filter-tags" style="display: flex; flex-wrap: wrap; gap: 8px;">
       
-        <a href="/circles/kdm/" style="padding: 6px 12px; background: var(--code-bg); border-radius: 6px; font-size: 0.9em; text-decoration: none; border: 1px solid var(--border); box-shadow: none;">
-          🏛️ kdm <span style="opacity: 0.6; font-size: 0.85em;">(1)</span>
-        </a>
+      <a href="/circles/kdm/" style="text-decoration: none; box-shadow: none;">
+        <span style="background: var(--theme); border: 1px solid var(--border); padding: 4px 12px; border-radius: 6px; font-size: 0.88em; color: var(--primary); display: inline-flex; align-items: center; gap: 5px;">
+          🏷️ KDM
+          <span style="opacity: 0.6; font-size: 0.85em;">(1)</span>
+        </span>
+      </a>
       
-        <a href="/circles/wfs/" style="padding: 6px 12px; background: var(--code-bg); border-radius: 6px; font-size: 0.9em; text-decoration: none; border: 1px solid var(--border); box-shadow: none;">
-          🏛️ wfs <span style="opacity: 0.6; font-size: 0.85em;">(1)</span>
-        </a>
+      <a href="/circles/wfs/" style="text-decoration: none; box-shadow: none;">
+        <span style="background: var(--theme); border: 1px solid var(--border); padding: 4px 12px; border-radius: 6px; font-size: 0.88em; color: var(--primary); display: inline-flex; align-items: center; gap: 5px;">
+          🏷️ WFS
+          <span style="opacity: 0.6; font-size: 0.85em;">(1)</span>
+        </span>
+      </a>
       
-        <a href="/circles/%E3%81%88%E3%81%9F%E3%83%BC%E3%81%AA%E3%82%8B%E3%82%8F%E3%83%BC%E3%81%8F%E3%81%99/" style="padding: 6px 12px; background: var(--code-bg); border-radius: 6px; font-size: 0.9em; text-decoration: none; border: 1px solid var(--border); box-shadow: none;">
-          🏛️ えたーなるわーくす <span style="opacity: 0.6; font-size: 0.85em;">(1)</span>
-        </a>
+      <a href="/circles/%E3%81%88%E3%81%9F%E3%83%BC%E3%81%AA%E3%82%8B%E3%82%8F%E3%83%BC%E3%81%8F%E3%81%99/" style="text-decoration: none; box-shadow: none;">
+        <span style="background: var(--theme); border: 1px solid var(--border); padding: 4px 12px; border-radius: 6px; font-size: 0.88em; color: var(--primary); display: inline-flex; align-items: center; gap: 5px;">
+          🏷️ えたーなるわーくす
+          <span style="opacity: 0.6; font-size: 0.85em;">(1)</span>
+        </span>
+      </a>
       
-        <a href="/circles/%E3%81%AA%E3%81%A4%E3%81%93%E3%82%93/" style="padding: 6px 12px; background: var(--code-bg); border-radius: 6px; font-size: 0.9em; text-decoration: none; border: 1px solid var(--border); box-shadow: none;">
-          🏛️ なつこん <span style="opacity: 0.6; font-size: 0.85em;">(3)</span>
-        </a>
+      <a href="/circles/%E3%81%AA%E3%81%A4%E3%81%93%E3%82%93/" style="text-decoration: none; box-shadow: none;">
+        <span style="background: var(--theme); border: 1px solid var(--border); padding: 4px 12px; border-radius: 6px; font-size: 0.88em; color: var(--primary); display: inline-flex; align-items: center; gap: 5px;">
+          🏷️ なつこん
+          <span style="opacity: 0.6; font-size: 0.85em;">(3)</span>
+        </span>
+      </a>
       
-        <a href="/circles/%E3%81%BE%E3%81%AA%E3%81%A5%E3%82%8B%E5%B1%8B-use/" style="padding: 6px 12px; background: var(--code-bg); border-radius: 6px; font-size: 0.9em; text-decoration: none; border: 1px solid var(--border); box-shadow: none;">
-          🏛️ まなづる屋℃-use <span style="opacity: 0.6; font-size: 0.85em;">(2)</span>
-        </a>
+      <a href="/circles/%E3%81%BE%E3%81%AA%E3%81%A5%E3%82%8B%E5%B1%8B-use/" style="text-decoration: none; box-shadow: none;">
+        <span style="background: var(--theme); border: 1px solid var(--border); padding: 4px 12px; border-radius: 6px; font-size: 0.88em; color: var(--primary); display: inline-flex; align-items: center; gap: 5px;">
+          🏷️ まなづる屋℃-Use
+          <span style="opacity: 0.6; font-size: 0.85em;">(2)</span>
+        </span>
+      </a>
       
-        <a href="/circles/%E3%83%A6%E3%83%93%E3%83%8E%E3%82%BF%E3%82%AF%E3%83%88/" style="padding: 6px 12px; background: var(--code-bg); border-radius: 6px; font-size: 0.9em; text-decoration: none; border: 1px solid var(--border); box-shadow: none;">
-          🏛️ ユビノタクト <span style="opacity: 0.6; font-size: 0.85em;">(2)</span>
-        </a>
+      <a href="/circles/%E3%83%A6%E3%83%93%E3%83%8E%E3%82%BF%E3%82%AF%E3%83%88/" style="text-decoration: none; box-shadow: none;">
+        <span style="background: var(--theme); border: 1px solid var(--border); padding: 4px 12px; border-radius: 6px; font-size: 0.88em; color: var(--primary); display: inline-flex; align-items: center; gap: 5px;">
+          🏷️ ユビノタクト
+          <span style="opacity: 0.6; font-size: 0.85em;">(2)</span>
+        </span>
+      </a>
       
-        <a href="/circles/%E5%AE%89%E7%A8%B3%E5%89%91%E5%90%9E/" style="padding: 6px 12px; background: var(--code-bg); border-radius: 6px; font-size: 0.9em; text-decoration: none; border: 1px solid var(--border); box-shadow: none;">
-          🏛️ 安稳剑吞 <span style="opacity: 0.6; font-size: 0.85em;">(2)</span>
-        </a>
+      <a href="/circles/%E5%AE%89%E7%A8%B3%E5%89%91%E5%90%9E/" style="text-decoration: none; box-shadow: none;">
+        <span style="background: var(--theme); border: 1px solid var(--border); padding: 4px 12px; border-radius: 6px; font-size: 0.88em; color: var(--primary); display: inline-flex; align-items: center; gap: 5px;">
+          🏷️ 安稳剑吞
+          <span style="opacity: 0.6; font-size: 0.85em;">(2)</span>
+        </span>
+      </a>
       
-        <a href="/circles/%E5%BD%A9%E5%B1%8B/" style="padding: 6px 12px; background: var(--code-bg); border-radius: 6px; font-size: 0.9em; text-decoration: none; border: 1px solid var(--border); box-shadow: none;">
-          🏛️ 彩屋 <span style="opacity: 0.6; font-size: 0.85em;">(1)</span>
-        </a>
+      <a href="/circles/%E5%BD%A9%E5%B1%8B/" style="text-decoration: none; box-shadow: none;">
+        <span style="background: var(--theme); border: 1px solid var(--border); padding: 4px 12px; border-radius: 6px; font-size: 0.88em; color: var(--primary); display: inline-flex; align-items: center; gap: 5px;">
+          🏷️ 彩屋
+          <span style="opacity: 0.6; font-size: 0.85em;">(2)</span>
+        </span>
+      </a>
       
-        <a href="/circles/%E6%99%AE%E9%B2%81%E5%A3%AB%E8%93%9D/" style="padding: 6px 12px; background: var(--code-bg); border-radius: 6px; font-size: 0.9em; text-decoration: none; border: 1px solid var(--border); box-shadow: none;">
-          🏛️ 普鲁士蓝 <span style="opacity: 0.6; font-size: 0.85em;">(3)</span>
-        </a>
+      <a href="/circles/%E6%99%AE%E9%B2%81%E5%A3%AB%E8%93%9D/" style="text-decoration: none; box-shadow: none;">
+        <span style="background: var(--theme); border: 1px solid var(--border); padding: 4px 12px; border-radius: 6px; font-size: 0.88em; color: var(--primary); display: inline-flex; align-items: center; gap: 5px;">
+          🏷️ 普鲁士蓝
+          <span style="opacity: 0.6; font-size: 0.85em;">(3)</span>
+        </span>
+      </a>
       
-        <a href="/circles/%E8%83%8C%E5%8C%85%E7%A4%BE/" style="padding: 6px 12px; background: var(--code-bg); border-radius: 6px; font-size: 0.9em; text-decoration: none; border: 1px solid var(--border); box-shadow: none;">
-          🏛️ 背包社 <span style="opacity: 0.6; font-size: 0.85em;">(1)</span>
-        </a>
+      <a href="/circles/%E8%83%8C%E5%8C%85%E7%A4%BE/" style="text-decoration: none; box-shadow: none;">
+        <span style="background: var(--theme); border: 1px solid var(--border); padding: 4px 12px; border-radius: 6px; font-size: 0.88em; color: var(--primary); display: inline-flex; align-items: center; gap: 5px;">
+          🏷️ 背包社
+          <span style="opacity: 0.6; font-size: 0.85em;">(1)</span>
+        </span>
+      </a>
       
     </div>
   </section>
 
   
-  <section style="margin-bottom: 30px; background: var(--entry); padding: 16px; border-radius: 8px; border: 1px solid var(--border);">
-    <h3 style="margin-top: 0; margin-bottom: 12px; border-bottom: 1px solid var(--border); padding-bottom: 8px;">🏷️ 按标签 (Tag) 筛选</h3>
-    <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+  <section class="filter-section" style="background: var(--entry); border: 1px solid var(--border); border-radius: 8px; padding: 20px;">
+    <h3 style="margin-top: 0; margin-bottom: 12px; border-bottom: 2px solid var(--border); padding-bottom: 8px; font-size: 1.15em; display: flex; align-items: center; gap: 8px;">
+      🏷️ <span>作品 Tag</span>
+    </h3>
+    <div class="filter-tags" style="display: flex; flex-wrap: wrap; gap: 8px;">
       
-        <a href="/tags/asmr/" style="padding: 4px 10px; background: var(--tertiary); border-radius: 6px; font-size: 0.88em; text-decoration: none; box-shadow: none;">
-          #asmr <span style="opacity: 0.6; font-size: 0.85em;">(3)</span>
-        </a>
+      <a href="/tags/asmr/" style="text-decoration: none; box-shadow: none;">
+        <span style="background: var(--theme); border: 1px solid var(--border); padding: 4px 10px; border-radius: 6px; font-size: 0.85em; color: var(--primary); display: inline-flex; align-items: center; gap: 4px;">
+          #ASMR
+          <span style="opacity: 0.6; font-size: 0.8em;">(3)</span>
+        </span>
+      </a>
       
-        <a href="/tags/gid/%E8%AE%A4%E5%90%8C%E9%9A%9C%E7%A2%8D/" style="padding: 4px 10px; background: var(--tertiary); border-radius: 6px; font-size: 0.88em; text-decoration: none; box-shadow: none;">
-          #gid/认同障碍 <span style="opacity: 0.6; font-size: 0.85em;">(1)</span>
-        </a>
+      <a href="/tags/gid/%E8%AE%A4%E5%90%8C%E9%9A%9C%E7%A2%8D/" style="text-decoration: none; box-shadow: none;">
+        <span style="background: var(--theme); border: 1px solid var(--border); padding: 4px 10px; border-radius: 6px; font-size: 0.85em; color: var(--primary); display: inline-flex; align-items: center; gap: 4px;">
+          #GID/认同障碍
+          <span style="opacity: 0.6; font-size: 0.8em;">(1)</span>
+        </span>
+      </a>
       
-        <a href="/tags/sf/" style="padding: 4px 10px; background: var(--tertiary); border-radius: 6px; font-size: 0.88em; text-decoration: none; box-shadow: none;">
-          #sf <span style="opacity: 0.6; font-size: 0.85em;">(1)</span>
-        </a>
+      <a href="/tags/sf/" style="text-decoration: none; box-shadow: none;">
+        <span style="background: var(--theme); border: 1px solid var(--border); padding: 4px 10px; border-radius: 6px; font-size: 0.85em; color: var(--primary); display: inline-flex; align-items: center; gap: 4px;">
+          #SF
+          <span style="opacity: 0.6; font-size: 0.8em;">(1)</span>
+        </span>
+      </a>
       
-        <a href="/tags/sm/" style="padding: 4px 10px; background: var(--tertiary); border-radius: 6px; font-size: 0.88em; text-decoration: none; box-shadow: none;">
-          #sm <span style="opacity: 0.6; font-size: 0.85em;">(1)</span>
-        </a>
+      <a href="/tags/sm/" style="text-decoration: none; box-shadow: none;">
+        <span style="background: var(--theme); border: 1px solid var(--border); padding: 4px 10px; border-radius: 6px; font-size: 0.85em; color: var(--primary); display: inline-flex; align-items: center; gap: 4px;">
+          #SM
+          <span style="opacity: 0.6; font-size: 0.8em;">(2)</span>
+        </span>
+      </a>
       
-        <a href="/tags/%E4%B8%BB%E4%BB%86/" style="padding: 4px 10px; background: var(--tertiary); border-radius: 6px; font-size: 0.88em; text-decoration: none; box-shadow: none;">
-          #主仆 <span style="opacity: 0.6; font-size: 0.85em;">(2)</span>
-        </a>
+      <a href="/tags/%E4%B8%BB%E4%BB%86/" style="text-decoration: none; box-shadow: none;">
+        <span style="background: var(--theme); border: 1px solid var(--border); padding: 4px 10px; border-radius: 6px; font-size: 0.85em; color: var(--primary); display: inline-flex; align-items: center; gap: 4px;">
+          #主仆
+          <span style="opacity: 0.6; font-size: 0.8em;">(2)</span>
+        </span>
+      </a>
       
-        <a href="/tags/%E4%B8%BB%E8%A7%86%E8%A7%92%E5%8F%97/" style="padding: 4px 10px; background: var(--tertiary); border-radius: 6px; font-size: 0.88em; text-decoration: none; box-shadow: none;">
-          #主视角受 <span style="opacity: 0.6; font-size: 0.85em;">(7)</span>
-        </a>
+      <a href="/tags/%E4%B8%BB%E8%A7%86%E8%A7%92%E5%8F%97/" style="text-decoration: none; box-shadow: none;">
+        <span style="background: var(--theme); border: 1px solid var(--border); padding: 4px 10px; border-radius: 6px; font-size: 0.85em; color: var(--primary); display: inline-flex; align-items: center; gap: 4px;">
+          #主视角受
+          <span style="opacity: 0.6; font-size: 0.8em;">(8)</span>
+        </span>
+      </a>
       
-        <a href="/tags/%E4%BA%92%E6%94%BB/" style="padding: 4px 10px; background: var(--tertiary); border-radius: 6px; font-size: 0.88em; text-decoration: none; box-shadow: none;">
-          #互攻 <span style="opacity: 0.6; font-size: 0.85em;">(3)</span>
-        </a>
+      <a href="/tags/%E4%BA%92%E6%94%BB/" style="text-decoration: none; box-shadow: none;">
+        <span style="background: var(--theme); border: 1px solid var(--border); padding: 4px 10px; border-radius: 6px; font-size: 0.85em; color: var(--primary); display: inline-flex; align-items: center; gap: 4px;">
+          #互攻
+          <span style="opacity: 0.6; font-size: 0.8em;">(3)</span>
+        </span>
+      </a>
       
-        <a href="/tags/%E5%82%AC%E7%9C%A0/" style="padding: 4px 10px; background: var(--tertiary); border-radius: 6px; font-size: 0.88em; text-decoration: none; box-shadow: none;">
-          #催眠 <span style="opacity: 0.6; font-size: 0.85em;">(1)</span>
-        </a>
+      <a href="/tags/%E5%82%AC%E7%9C%A0/" style="text-decoration: none; box-shadow: none;">
+        <span style="background: var(--theme); border: 1px solid var(--border); padding: 4px 10px; border-radius: 6px; font-size: 0.85em; color: var(--primary); display: inline-flex; align-items: center; gap: 4px;">
+          #催眠
+          <span style="opacity: 0.6; font-size: 0.8em;">(1)</span>
+        </span>
+      </a>
       
-        <a href="/tags/%E5%90%8C%E4%BA%BA/" style="padding: 4px 10px; background: var(--tertiary); border-radius: 6px; font-size: 0.88em; text-decoration: none; box-shadow: none;">
-          #同人 <span style="opacity: 0.6; font-size: 0.85em;">(3)</span>
-        </a>
+      <a href="/tags/%E5%90%8C%E4%BA%BA/" style="text-decoration: none; box-shadow: none;">
+        <span style="background: var(--theme); border: 1px solid var(--border); padding: 4px 10px; border-radius: 6px; font-size: 0.85em; color: var(--primary); display: inline-flex; align-items: center; gap: 4px;">
+          #同人
+          <span style="opacity: 0.6; font-size: 0.8em;">(3)</span>
+        </span>
+      </a>
       
-        <a href="/tags/%E5%A4%9A%E4%BA%BA/" style="padding: 4px 10px; background: var(--tertiary); border-radius: 6px; font-size: 0.88em; text-decoration: none; box-shadow: none;">
-          #多人 <span style="opacity: 0.6; font-size: 0.85em;">(1)</span>
-        </a>
+      <a href="/tags/%E5%A4%9A%E4%BA%BA/" style="text-decoration: none; box-shadow: none;">
+        <span style="background: var(--theme); border: 1px solid var(--border); padding: 4px 10px; border-radius: 6px; font-size: 0.85em; color: var(--primary); display: inline-flex; align-items: center; gap: 4px;">
+          #多人
+          <span style="opacity: 0.6; font-size: 0.8em;">(1)</span>
+        </span>
+      </a>
       
-        <a href="/tags/%E5%B0%BE%E5%B7%B4/" style="padding: 4px 10px; background: var(--tertiary); border-radius: 6px; font-size: 0.88em; text-decoration: none; box-shadow: none;">
-          #尾巴 <span style="opacity: 0.6; font-size: 0.85em;">(1)</span>
-        </a>
+      <a href="/tags/%E5%B0%BE%E5%B7%B4/" style="text-decoration: none; box-shadow: none;">
+        <span style="background: var(--theme); border: 1px solid var(--border); padding: 4px 10px; border-radius: 6px; font-size: 0.85em; color: var(--primary); display: inline-flex; align-items: center; gap: 4px;">
+          #尾巴
+          <span style="opacity: 0.6; font-size: 0.8em;">(1)</span>
+        </span>
+      </a>
       
-        <a href="/tags/%E6%90%9E%E7%AC%91/" style="padding: 4px 10px; background: var(--tertiary); border-radius: 6px; font-size: 0.88em; text-decoration: none; box-shadow: none;">
-          #搞笑 <span style="opacity: 0.6; font-size: 0.85em;">(1)</span>
-        </a>
+      <a href="/tags/%E6%90%9E%E7%AC%91/" style="text-decoration: none; box-shadow: none;">
+        <span style="background: var(--theme); border: 1px solid var(--border); padding: 4px 10px; border-radius: 6px; font-size: 0.85em; color: var(--primary); display: inline-flex; align-items: center; gap: 4px;">
+          #搞笑
+          <span style="opacity: 0.6; font-size: 0.8em;">(1)</span>
+        </span>
+      </a>
       
-        <a href="/tags/%E6%AF%8D%E5%A5%B3/" style="padding: 4px 10px; background: var(--tertiary); border-radius: 6px; font-size: 0.88em; text-decoration: none; box-shadow: none;">
-          #母女 <span style="opacity: 0.6; font-size: 0.85em;">(1)</span>
-        </a>
+      <a href="/tags/%E6%AF%8D%E5%A5%B3/" style="text-decoration: none; box-shadow: none;">
+        <span style="background: var(--theme); border: 1px solid var(--border); padding: 4px 10px; border-radius: 6px; font-size: 0.85em; color: var(--primary); display: inline-flex; align-items: center; gap: 4px;">
+          #母女
+          <span style="opacity: 0.6; font-size: 0.8em;">(1)</span>
+        </span>
+      </a>
       
-        <a href="/tags/%E6%B1%89%E5%8C%96/" style="padding: 4px 10px; background: var(--tertiary); border-radius: 6px; font-size: 0.88em; text-decoration: none; box-shadow: none;">
-          #汉化 <span style="opacity: 0.6; font-size: 0.85em;">(17)</span>
-        </a>
+      <a href="/tags/%E6%B1%89%E5%8C%96/" style="text-decoration: none; box-shadow: none;">
+        <span style="background: var(--theme); border: 1px solid var(--border); padding: 4px 10px; border-radius: 6px; font-size: 0.85em; color: var(--primary); display: inline-flex; align-items: center; gap: 4px;">
+          #汉化
+          <span style="opacity: 0.6; font-size: 0.8em;">(18)</span>
+        </span>
+      </a>
       
-        <a href="/tags/%E7%BA%AF%E7%88%B1/" style="padding: 4px 10px; background: var(--tertiary); border-radius: 6px; font-size: 0.88em; text-decoration: none; box-shadow: none;">
-          #纯爱 <span style="opacity: 0.6; font-size: 0.85em;">(6)</span>
-        </a>
+      <a href="/tags/%E7%BA%AF%E7%88%B1/" style="text-decoration: none; box-shadow: none;">
+        <span style="background: var(--theme); border: 1px solid var(--border); padding: 4px 10px; border-radius: 6px; font-size: 0.85em; color: var(--primary); display: inline-flex; align-items: center; gap: 4px;">
+          #纯爱
+          <span style="opacity: 0.6; font-size: 0.8em;">(6)</span>
+        </span>
+      </a>
       
-        <a href="/tags/%E8%83%8C%E5%BE%B7/" style="padding: 4px 10px; background: var(--tertiary); border-radius: 6px; font-size: 0.88em; text-decoration: none; box-shadow: none;">
-          #背德 <span style="opacity: 0.6; font-size: 0.85em;">(1)</span>
-        </a>
+      <a href="/tags/%E8%83%8C%E5%BE%B7/" style="text-decoration: none; box-shadow: none;">
+        <span style="background: var(--theme); border: 1px solid var(--border); padding: 4px 10px; border-radius: 6px; font-size: 0.85em; color: var(--primary); display: inline-flex; align-items: center; gap: 4px;">
+          #背德
+          <span style="opacity: 0.6; font-size: 0.8em;">(1)</span>
+        </span>
+      </a>
       
-        <a href="/tags/%E8%A7%A6%E6%89%8B/" style="padding: 4px 10px; background: var(--tertiary); border-radius: 6px; font-size: 0.88em; text-decoration: none; box-shadow: none;">
-          #触手 <span style="opacity: 0.6; font-size: 0.85em;">(2)</span>
-        </a>
+      <a href="/tags/%E8%A7%A6%E6%89%8B/" style="text-decoration: none; box-shadow: none;">
+        <span style="background: var(--theme); border: 1px solid var(--border); padding: 4px 10px; border-radius: 6px; font-size: 0.85em; color: var(--primary); display: inline-flex; align-items: center; gap: 4px;">
+          #触手
+          <span style="opacity: 0.6; font-size: 0.8em;">(2)</span>
+        </span>
+      </a>
       
-        <a href="/tags/%E9%AD%94%E7%89%A9%E5%A8%98/" style="padding: 4px 10px; background: var(--tertiary); border-radius: 6px; font-size: 0.88em; text-decoration: none; box-shadow: none;">
-          #魔物娘 <span style="opacity: 0.6; font-size: 0.85em;">(2)</span>
-        </a>
+      <a href="/tags/%E9%AD%94%E7%89%A9%E5%A8%98/" style="text-decoration: none; box-shadow: none;">
+        <span style="background: var(--theme); border: 1px solid var(--border); padding: 4px 10px; border-radius: 6px; font-size: 0.85em; color: var(--primary); display: inline-flex; align-items: center; gap: 4px;">
+          #魔物娘
+          <span style="opacity: 0.6; font-size: 0.8em;">(2)</span>
+        </span>
+      </a>
       
     </div>
   </section>

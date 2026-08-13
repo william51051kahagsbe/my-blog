@@ -14,12 +14,17 @@ theme = "PaperMod"
 若发现**链接失效**或**解压码错误**，请在确认后于 B 站私信本人，感谢！
 """
 
+[taxonomies]
+  tag = "tags"
+  circle = "circles"
+  rating = "ratings"
+
 [params.fuseOpts]
   isCaseSensitive = false
   shouldSort = true
   location = 0
   distance = 1000
-  threshold = 0.4
+  threshold = 0.2
   minMatchCharLength = 1
   keys = ["rj_id","title",]
   
@@ -36,12 +41,8 @@ theme = "PaperMod"
   weight = 20
 
 [[menu.main]]
-  identifier = "tags"
+  identifier = "filter"
   name = "标签/筛选"
-  url = "/tags/"
+  url = "/filter/"
   weight = 30
 
-[taxonomies]
-  tag = "tags"
-  circle = "circles"
-  rating = "ratings"

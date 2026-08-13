@@ -1,53 +1,57 @@
-<div class="filter-hub" style="margin-top: 20px;">
-  
-  <!-- 1. 年龄向筛选 -->
-  <section style="margin-bottom: 30px; background: var(--entry); padding: 16px; border-radius: 8px; border: 1px solid var(--border);">
-    <h3 style="margin-top: 0; margin-bottom: 12px; border-bottom: 1px solid var(--border); padding-bottom: 8px;">🎨 按年龄向筛选</h3>
-    <div style="display: flex; gap: 12px; flex-wrap: wrap;">
-      {{ range $name, $taxonomy := .Site.Taxonomies.ratings }}
-        {{ $bg := "#6c757d" }}
-        {{ $color := "#fff" }}
-        {{ $label := $name }}
-        
-        {{ if eq $name "红" }}
-          {{ $bg = "#dc3545" }}
-          {{ $label = "🔴 R-18 (红)" }}
-        {{ else if eq $name "黄" }}
-          {{ $bg = "#ffc107" }}
-          {{ $color = "#333" }}
-          {{ $label = "🟡 R-15 (黄)" }}
-        {{ else if eq $name "绿" }}
-          {{ $bg = "#28a745" }}
-          {{ $label = "🟢 全年龄 (绿)" }}
-        {{ end }}
+<div class="filter-hub-container" style="display: flex; flex-direction: column; gap: 30px; margin-top: 20px;">
 
-        <a href="{{ $taxonomy.Page.RelPermalink }}" style="padding: 6px 16px; background: {{ $bg }}; color: {{ $color }}; border-radius: 20px; font-weight: bold; text-decoration: none; box-shadow: none;">
-          {{ $label }} <span style="font-size: 0.85em; opacity: 0.8;">({{ $taxonomy.Count }})</span>
-        </a>
+  <!-- 1. 年龄向板块 -->
+  <section class="filter-section" style="background: var(--entry); border: 1px solid var(--border); border-radius: 8px; padding: 20px;">
+    <h3 style="margin-top: 0; margin-bottom: 12px; border-bottom: 2px solid var(--border); padding-bottom: 8px; font-size: 1.15em; display: flex; align-items: center; gap: 8px;">
+      🔞 <span>年龄向</span>
+    </h3>
+    <div class="filter-tags" style="display: flex; flex-wrap: wrap; gap: 10px;">
+      {{ range .Site.Taxonomies.ratings }}
+      <a href="{{ .Page.RelPermalink }}" style="text-decoration: none; box-shadow: none;">
+        <span style="background: var(--theme); border: 1px solid var(--border); padding: 6px 14px; border-radius: 20px; font-size: 0.9em; color: var(--primary); display: inline-flex; align-items: center; gap: 6px; transition: all 0.2s ease;">
+          <strong>
+            {{ if eq .Page.Title "绿" }}🟢 全年龄
+            {{ else if eq .Page.Title "黄" }}🟡 R-15
+            {{ else if eq .Page.Title "红" }}🔴 R-18
+            {{ else }}{{ .Page.Title }}{{ end }}
+          </strong>
+          <span style="opacity: 0.6; font-size: 0.85em;">({{ .Count }})</span>
+        </span>
+      </a>
       {{ end }}
     </div>
   </section>
 
-  <!-- 2. 社团筛选 -->
-  <section style="margin-bottom: 30px; background: var(--entry); padding: 16px; border-radius: 8px; border: 1px solid var(--border);">
-    <h3 style="margin-top: 0; margin-bottom: 12px; border-bottom: 1px solid var(--border); padding-bottom: 8px;">🏛️ 按社团筛选</h3>
-    <div style="display: flex; gap: 8px; flex-wrap: wrap;">
-      {{ range $name, $taxonomy := .Site.Taxonomies.circles }}
-        <a href="{{ $taxonomy.Page.RelPermalink }}" style="padding: 6px 12px; background: var(--code-bg); border-radius: 6px; font-size: 0.9em; text-decoration: none; border: 1px solid var(--border); box-shadow: none;">
-          🏛️ {{ $name }} <span style="opacity: 0.6; font-size: 0.85em;">({{ $taxonomy.Count }})</span>
-        </a>
+  <!-- 2. 社团板块 -->
+  <section class="filter-section" style="background: var(--entry); border: 1px solid var(--border); border-radius: 8px; padding: 20px;">
+    <h3 style="margin-top: 0; margin-bottom: 12px; border-bottom: 2px solid var(--border); padding-bottom: 8px; font-size: 1.15em; display: flex; align-items: center; gap: 8px;">
+      🏠 <span>社团</span>
+    </h3>
+    <div class="filter-tags" style="display: flex; flex-wrap: wrap; gap: 8px;">
+      {{ range .Site.Taxonomies.circles }}
+      <a href="{{ .Page.RelPermalink }}" style="text-decoration: none; box-shadow: none;">
+        <span style="background: var(--theme); border: 1px solid var(--border); padding: 4px 12px; border-radius: 6px; font-size: 0.88em; color: var(--primary); display: inline-flex; align-items: center; gap: 5px;">
+          🏷️ {{ .Page.Title }}
+          <span style="opacity: 0.6; font-size: 0.85em;">({{ .Count }})</span>
+        </span>
+      </a>
       {{ end }}
     </div>
   </section>
 
-  <!-- 3. 标签筛选 -->
-  <section style="margin-bottom: 30px; background: var(--entry); padding: 16px; border-radius: 8px; border: 1px solid var(--border);">
-    <h3 style="margin-top: 0; margin-bottom: 12px; border-bottom: 1px solid var(--border); padding-bottom: 8px;">🏷️ 按标签 (Tag) 筛选</h3>
-    <div style="display: flex; gap: 8px; flex-wrap: wrap;">
-      {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
-        <a href="{{ $taxonomy.Page.RelPermalink }}" style="padding: 4px 10px; background: var(--tertiary); border-radius: 6px; font-size: 0.88em; text-decoration: none; box-shadow: none;">
-          #{{ $name }} <span style="opacity: 0.6; font-size: 0.85em;">({{ $taxonomy.Count }})</span>
-        </a>
+  <!-- 3. Tag 标签板块 -->
+  <section class="filter-section" style="background: var(--entry); border: 1px solid var(--border); border-radius: 8px; padding: 20px;">
+    <h3 style="margin-top: 0; margin-bottom: 12px; border-bottom: 2px solid var(--border); padding-bottom: 8px; font-size: 1.15em; display: flex; align-items: center; gap: 8px;">
+      🏷️ <span>作品 Tag</span>
+    </h3>
+    <div class="filter-tags" style="display: flex; flex-wrap: wrap; gap: 8px;">
+      {{ range .Site.Taxonomies.tags }}
+      <a href="{{ .Page.RelPermalink }}" style="text-decoration: none; box-shadow: none;">
+        <span style="background: var(--theme); border: 1px solid var(--border); padding: 4px 10px; border-radius: 6px; font-size: 0.85em; color: var(--primary); display: inline-flex; align-items: center; gap: 4px;">
+          #{{ .Page.Title }}
+          <span style="opacity: 0.6; font-size: 0.8em;">({{ .Count }})</span>
+        </span>
+      </a>
       {{ end }}
     </div>
   </section>
