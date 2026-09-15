@@ -2,6 +2,10 @@ baseURL = 'https://my-blog-535.pages.dev'
 locale = 'en-us'
 title = '百合音声分享站'
 theme = "PaperMod"
+
+[params.cover]
+  responsiveImages = true
+
 [outputs]
   home = ["HTML", "RSS", "JSON"] # 增加 JSON 输出以供 Fuse.js 搜索使用
 
@@ -45,4 +49,3 @@ theme = "PaperMod"
   name = "标签/筛选"
   url = "/filter/"
   weight = 30
-

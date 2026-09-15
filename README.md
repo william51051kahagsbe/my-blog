@@ -29,6 +29,7 @@
 ```text
 .
 ├── assets/css/extended/   # 自定义样式
+├── assets/images/optimized/ # Hugo 图片资源和优化后的 WebP 封面
 ├── content/
 │   ├── posts/             # 资源文章
 │   ├── catalog.md         # 资源总目录
@@ -98,13 +99,19 @@ circle: "社团名称"
 rating: "绿"
 tags: ["ASMR", "汉化"]
 cover:
-  image: "/images/cover.jpg"
+  image: "images/optimized/RJ00000000.webp"
 download_link: "https://example.com"
 extract_code: "example"
 ---
 ```
 
 修改或新增文章后，建议先运行本地预览，检查标题、封面、链接和筛选分类是否正常。
+
+## 图片优化
+
+作品封面使用 Hugo 资源管线处理，页面会根据设备生成和选择合适尺寸的 WebP 图片。当前封面原图仍保留在 \x60static/images/\x60，优化后的资源位于 \x60assets/images/optimized/\x60。
+
+首页封面使用懒加载，详情页使用响应式 \x60srcset\x60，并通过 \x60static/_headers\x60 为图片设置缓存策略。新增封面时，请先生成优化后的 WebP 文件，再在文章 Front Matter 中引用 \x60images/optimized/作品编号.webp\x60。
 
 ## 部署
 
