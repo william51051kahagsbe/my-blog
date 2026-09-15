@@ -5,6 +5,7 @@ theme = "PaperMod"
 
 [params.cover]
   responsiveImages = true
+  hiddenInSingle = true
 
 [outputs]
   home = ["HTML", "RSS", "JSON"] # 增加 JSON 输出以供 Fuse.js 搜索使用
